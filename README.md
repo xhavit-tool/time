@@ -1,24 +1,6 @@
-# time
+# 根据 url 参数指定颜色
 
-## Project setup
-```
-npm install
-```
+如 `?color=00000&bgcolor=ffffff`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-   color：文本颜色
+-   bgcolor：背景颜色
