@@ -1,5 +1,3 @@
-import urijs from 'urijs';
-
 /**
  * 计时
  * @param {Object} param0 step: 步进毫秒数，callbackEvery：每一个步进执行一次的回调函数
@@ -17,7 +15,7 @@ export function time({ step, callbackEvery }) {
         // 修复误差后的步进时间
         let fixedStep = Math.max(0, step - (nowTime - rightTime));
 
-        console.log(fixedStep);
+        console.log(times, nowTime, fixedStep);
 
         timer = setTimeout(() => {
             times++;
@@ -42,11 +40,4 @@ export function getWindowSize() {
     const height = win.innerHeight || docEle.clientHeight || body.clientHeight;
 
     return { width, height };
-}
-
-/**
- * 获取url的颜色参数
- */
-export function getUrlColorParams() {
-    return urijs(window.location.href).query(true);
 }
