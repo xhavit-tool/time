@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "dayjs": "^1.8.29",
-    "urijs": "^1.19.2",
+    "urijs": "^1.19.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
